@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Esma Maroc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+    <main id="fullpage">
+      <div class="section sign_up">
+        <div class="sign_up_header sticker">
+          <div class="menu_container">
+            <ul class="main_menu">
+              <li class="main_list_item"><a href="#">Acceuil</a></li>
+              <li class="main_list_item filiere"><a href="#filiere">Filiére</a></li>
+              <li class="main_list_item"><a href="#">Formations</a>
+                <ul class="sub_menu">
+                  <li><a href="#">Bac+3 GI</a></li>
+                  <li><a href="#">Bac+5 GI</a></li>
+                  <li><a href="#">Bac+3 GAE</a></li>
+                  <li><a href="#">Bac+5 GAE</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Partenaires Universitaires</a></li>
+              <li><a href="#">E-inscription</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sign_up_left_content">
+          <h1>Inscrivez-vous maintenant Online</h1>
+          <p>Réussir votre entrée dans la vie professionnelle</p>
+        </div>
+        <div class="sign_up_right_content">
+          <div class="sign_up_form">
+            <span class="sign_up_logo"><img src="res/logo_esma.png" alt="ESMA LOGO"/></span>
+            <form name="sign_up_forms" class="sign_up_form_group" action="sign_up.php" method="post" onsubmit="return formValidation();">
+              <span class="input_container"><input type="text" name="first_name" placeholder="Prénom"></span>
+              <span class="input_container"><input type="text" name="last_name" placeholder="Nom"></span>
+              <span class="input_container"><input type="text" name="phone_number" placeholder="N Télephone"></span>
+              <span class="input_container"><input type="email" name="email" placeholder="Em@il"></span>
+              <span class="textarea_container"><textarea rows="3" cols="100%" placeholder="Adresse ... "></textarea></span>
+              <span class="radio_group">
+                <label class="radio_title">Niveau : </label>
+                <label>Bac</label><input type="radio" name="level" value="Bac">
+                <label>Bac+2</label><input type="radio" name="level" value="Bac+2">
+                <label>Bac+3</label><input type="radio" name="level" value="Bac+3">
+                <label>Autre</label><input type="radio" name="level" value="Autres" checked>
+              </span>
+              <span class="submit_btn"><input type="submit" value="Envoyer"></span>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="section container" id="filiere">
+        <section class="left" id="left">
+          <div class="left_section">
+              <div class="left_heading">
+                <h3 id="gi_heading">GENIE INFORMATIQUE</h3>
+              </div>
+              <div class="section_content">
+                <div class="element_conainer" id="left_elements">
+                  <div class="one_element" onclick="javascript:fullBlueSection();">
+                    <span class="element_icon"><i class="fa fa-2x fa-info-circle"></i></span>
+                    <span class="element_text"><p>OBJECTIFS DE LA FILIERE</p></span>
+                  </div>
+                  <div class="one_element" onclick="javascript:fullBlueSection();">
+                    <span class="element_icon"><i class="fa fa-2x fa-university"></i></span>
+                    <span class="element_text"><p>DOUBLE DIPLOME UNIVERSITAIRE</p></span>
+                  </div>
+                  <div class="one_element" onclick="javascript:fullBlueSection();">
+                    <span class="element_icon"><i class="fa fa-2x fa-sign-in"></i></span>
+                    <span class="element_text"><p>Admission parallèle</p></span>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <section class="left_section_right_content">
+            <h3 class="left_section_right_content_heading">OBJECTIFS DE LA FILIERE</h3>
+            <div class="content_text_container">
+              <p class="content_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </section>
+          <div class="left_close" onclick="leftCloseBtn()"><i class="fa fa-3x  fa-times "></i></div>
+        </section>
+        <section class="right" id="right">
+          <div class="right_section">
+            <div class="right_heading">
+              <h3 id="gae_heading">GESTION ADMINISTRATION</h3>
+            </div>
+            <div class="section_content">
+              <div class="element_conainer">
+                <div class="one_element" onclick="fullOrangeSection()">
+                  <span class="element_icon"><i class="fa fa-2x fa-info-circle"></i></span>
+                  <span class="element_text"><p>OBJECTIFS DE LA FILIERE</p></span>
+                </div>
+                <div class="one_element" onclick="fullOrangeSection()">
+                  <span class="element_icon"><i class="fa fa-2x fa-university"></i></span>
+                  <span class="element_text"><p>DOUBLE DIPLOME UNIVERSITAIRE</p></span>
+                </div>
+                <div class="one_element" onclick="fullOrangeSection()">
+                  <span class="element_icon"><i class="fa fa-2x fa-sign-in"></i></span>
+                  <span class="element_text"><p>Admission parallèle</p></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right_close" onclick="rightCloseBtn()"><i class="fa fa-3x  fa-times "></i></div>
+        </section>
+        <img alt="binary" src="res/binary.jpg" class="left_div_img" id="left_image"/>
+        <img alt="Accountant" src="res/accountant.jpg" class="right_div_img" id="right_image"/>
+      </div>
+    </main>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

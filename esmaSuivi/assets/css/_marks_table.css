@@ -1,0 +1,36 @@
+div.panel_content {
+  width:90%;
+  height:90%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+
+table {
+  width:90%;
+  margin: 45px auto;
+  padding:10px;
+}
+table th {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+th ,td {
+  text-align: center;
+  vertical-align: middle;
+  border:1px solid rgb(170, 168, 168);
+  padding:10px;
+
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr.data_row:hover {
+  background: rgb(170, 168, 168);
+}
+
+td.course_name {
+  font-weight: 600;
+}

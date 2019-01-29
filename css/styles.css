@@ -1,0 +1,377 @@
+
+
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Teko', sans-serif;
+}
+
+.container {
+  width:100%;
+  height:100vh;
+  position:relative;
+}
+
+.left , .right {
+  width:100%;
+  height:100vh;
+  display: inline-block;
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:rgba(2,120,167,0.9) ;
+  /*-webkit-clip-path:polygon(0 0, 47% 0, 53% 100%, 0 100%);*/
+  clip-path:polygon(0 0, 47% 0, 53% 100%, 0 100%);
+  transition:400ms;
+}
+.left_div_img {
+  width:100%;
+  height: 100vh;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*-webkit-clip-path:polygon(0 0, 47% 0, 53% 100%, 0 100%);*/
+  clip-path:polygon(0 0, 47% 0, 53% 100%, 0 100%);
+  z-index: -1;
+  transition:400ms;
+}
+
+
+/*CLOSE BTNS CSS*/
+.left_close {
+  color:#051E29;
+  opacity: 0.8;
+  cursor: pointer;
+  position: inherit;
+  right:15px;
+  top:5px;
+  transition: 500ms;
+}
+.left_close:hover{
+  opacity: 1;
+}
+.right_close{
+  color:#051E29;
+  opacity: 0.8;
+  cursor: pointer;
+  position: inherit;
+  left:15px;
+  top:5px;
+  transition: 500ms;
+}
+.right_close:hover{
+  opacity: 1;
+}
+/*CLOSE BTNS END*/
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(244,153,51,0.9);
+  /*-webkit-clip-path:polygon(100% 0, 47% 0, 53% 100%, 100% 100%);*/
+  clip-path:polygon(100% 0, 47% 0, 53% 100%, 100% 100%);
+  transition:400ms;
+
+}
+.right_div_img{
+  width:100%;
+  height: 100vh;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /*-webkit-clip-path:polygon(100% 0, 47% 0, 53% 100%, 100% 100%);*/
+  clip-path:polygon(100% 0, 47% 0, 53% 100%, 100% 100%);
+  z-index: -1;
+  transition:400ms;
+}
+
+.left:hover {
+  background:rgba(2,120,167,0.7);
+  transition: 400ms;
+}
+.left:hover  #gi_heading {
+  transform: rotate(5deg);
+  transition: 200ms;
+}
+.right:hover{
+  background: rgba(244,153,51,0.7);
+  transition: 400ms;
+}
+.right:hover  #gae_heading {
+  transform: rotate(5deg);
+  transition: 200ms;
+}
+
+
+/*Left Section Css*/
+
+.left_section {
+  margin-top: 20vh;
+  width:50%;
+  float: left;
+}
+.right_section {
+  margin-top: 20vh;
+  width:50%;
+  float: right;
+}
+.left_section .left_heading h3 , .right_section .right_heading h3 {
+  width: 70%;
+  font-size: 3em;
+  padding: 10px;
+  margin: 10px auto;
+  color: #051E29;
+  text-align: center;
+}
+
+
+/*Elements Css*/
+
+.section_content {
+  width:100%;
+  height:auto;
+  margin: 10px auto;
+  text-align: center;
+}
+div.one_element {
+  width:60%;
+  margin: 40px auto;
+  background-color:#d8e2dc;
+  text-align: left;
+  clip-path:polygon(1% 5%, 90% 2%, 85% 90%, 0 100% );
+  transition:  all 400ms ease;
+}
+
+
+div.one_element:hover {
+  cursor: pointer;
+}
+div.left_section .one_element:hover i {
+  color:#0278a7;
+  transition: 400ms;
+}
+div.right_section .one_element:hover i {
+  color:#f49933;
+  transition: 400ms;
+}
+span.element_icon , span.element_text {
+  display: inline-block;
+  padding: 10px;
+}
+span.element_icon i {
+  padding:3px;
+}
+span.element_text {
+  font-size: 2em;
+}
+/*ELEMENT CSS END*/
+
+
+/*SECTIONS TEXT CSS BOTH*/
+.left_section_right_content , .left_section {
+  display:inline-block;
+}
+
+.left_section_right_content {
+  width:40%;
+  margin:20vh auto 0px auto;
+}
+.content_text_container {
+  width:90%;
+  margin: auto;
+  background:#d8e2dc;
+  padding:10px;
+}
+
+.content_text_container p {
+  text-align:left;
+  line-height: 1.3em;
+  font-size: 1.8em;
+  color:#000;
+
+}
+.left_section_right_content_heading{
+  width: 70%;
+  font-size: 3em;
+  padding: 10px;
+  margin: 10px auto;
+  color: #051E29;
+  text-align: center;
+}
+
+
+/*SECTIONS TEXT CSS BOTH END*/
+
+
+/*Second section css*/
+
+.sign_up {
+  width:100%;
+  height:100vh;
+  background-image: url('../res/sign_up_img.jpg');
+  background-position:center;
+  background-size:cover;
+  background-attachment: fixed;
+  position: relative;
+}
+div.sign_up_header {
+  width:100%;
+  height:100px;
+  background: linear-gradient(to bottom,rgba(43, 43, 43,0.9),rgba(80, 73, 73, 0.5),rgba(80, 73, 73, 0));
+}
+/*SECOND SECTION CSS END*/
+
+/*MENU CSS */
+.menu_container{
+  width:90%;
+  margin: 0  auto 5px auto;
+  text-align: center;
+}
+
+ul.main_menu  {
+  list-style: none;
+}
+
+ul.main_menu li {
+  display: inline-block;
+  margin: 5px 10px;
+
+}
+ul.main_menu a {
+  text-decoration: none;
+  color:#ffffff;
+  padding:10px;
+  font-size: 2em;
+
+}
+ul.main_menu a:hover{
+  text-shadow: 2px 2px #000;
+}
+
+.main_list_item {
+  position: relative;
+
+}
+.main_list_item > ul {
+  position: absolute;
+  display: none;
+  background: linear-gradient(to top,rgba(9, 9, 9, 0.8),rgba(9, 9, 9, 0.4),rgba(9, 9, 9, 0));
+  border-bottom-right-radius:5px ;
+  border-bottom-left-radius:5px ;
+}
+.main_list_item > ul li {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+.main_list_item:hover > ul {
+  display: block;
+}
+/*MENU CSS END*/
+
+/*SIGN UP LEFT CONTENT CSS*/
+.sign_up_left_content{
+  margin-top: 10vh;
+  width:50%;
+  float: left;
+  text-align:center;
+}
+.sign_up_left_content > h1 {
+  font-size: 3.1em;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
+.sign_up_left_content > p {
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+
+}
+
+
+/*SIGN UP LEFT CONTENT CSS END*/
+
+/*SIGN UP CONTENT Right CSS*/
+.sign_up_right_content {
+  margin-top: 10vh;
+  width:50%;
+  height: auto;
+  float:right;
+}
+.sign_up_form {
+  width:60%;
+  margin: auto;
+  padding:0px 0px 25px 0px;
+  background: rgba(5, 30, 41, 0.9);
+  clip-path:polygon(0 0 , 100% 0 , 100% 90% , 0 100%);
+  text-align: center;
+
+}
+.sign_up_form .sign_up_logo {
+  width: 100%;
+  display: block;
+  background: rgb(255, 255,255);
+  padding: 10px 0px;
+  clip-path: polygon(0 0, 100% 0 ,100% 100%,0 75%);
+}
+/*SIGN UP Right CONTENT CSS END*/
+
+
+/*SIGN UP FORM CSS */
+.sign_up_form_group {
+  margin: 10px auto;
+}
+.input_container{
+  width:49%;
+  margin: 20px auto;
+  display: inline-block;
+}
+.input_container > input, .textarea_container > textarea {
+  width:80%;
+  font-size: 1em;
+  font-weight: 900;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0);
+  border-top: 0px solid rgba(255, 255, 255, 0);
+  border-left:  0px solid rgba(255, 255, 255, 0);
+  border-right:  0px solid rgba(255, 255, 255, 0);
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+.radio_group {
+  width:100%;
+  display: block;
+  margin: 10px auto;
+  font-size: 1.2em;
+  font-weight: 900;
+  color: #ffffff;
+}
+.radio_group > input:focus {
+  outline: none;
+}
+.radio_title {
+  font-size: 1.5em;
+}
+.radio_group > label {
+  padding:5px;
+}
+span.submit_btn {
+  width:100%;
+  display: block;
+}
+span.submit_btn > input {
+  padding: 20px;
+  color: #000;
+  font-size: 2em;
+  background:#fff;
+  border:  0px solid rgba(255, 255, 255, 0);
+  clip-path:polygon(0 10%, 95% 0 ,100% 90%,0 85%);
+}
+
+/*SIGN UP FORM CSS END*/

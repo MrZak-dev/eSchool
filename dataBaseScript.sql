@@ -1,0 +1,6 @@
+
+
+
+
+
+  FOREIGN KEY(course_id) REFERENCES courses(course_id) ON UPDATE CASCADE ON DELETE NO ACTION,DDDFdadsd

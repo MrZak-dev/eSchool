@@ -1,0 +1,45 @@
+.marks_panel_header{
+  width: 90%;
+  margin: 5px auto;
+}
+.marks_panel_header h1 {
+  width:100%;
+  margin:20px auto;
+  font-size: 1.4em;
+  font-weight: 900;
+  border-bottom: 2px solid rgb(170, 168, 168);
+  padding:10px 0px;
+}
+.panel_header{
+  width:100%;
+  height:10vh;
+  display:block;
+  background:rgb(21, 27, 37);
+}
+.panel_logo , .panel_ntg , .panel_personal_info {
+  display:inline-block;
+  width:30%;
+  height: 50%;
+}
+.panel_personal_info {
+  text-align: end;
+}
+.panel_personal_info span {
+  display: inline-block;
+  padding:5px;
+  color:rgb(202, 201, 204);
+}
+
+span.log_out_icon {
+  color:rgb(255, 25, 20);
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 400ms;
+}
+span.log_out_icon:hover {
+  opacity: 1;
+}
+span.log_out_icon a {
+  color: inherit;
+  text-decoration: none;
+}

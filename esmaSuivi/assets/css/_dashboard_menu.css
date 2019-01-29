@@ -1,0 +1,51 @@
+main.dashboard_container {
+  width:100vw;
+  height:100vh;
+  background-color: rgb(202, 201, 204);
+  overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(21, 27, 37);
+  outline: none;
+  transition: all 500ms;
+}
+
+aside.panel_menu_container {
+  display: block;
+  float: left;
+  width:10%;
+  height:90vh;
+  background-color:rgb(170, 168, 168);
+  text-align: center;
+}
+
+.panel_menu {
+  width:100%;
+  padding-top:20px;
+}
+
+.panel_menu ul li {
+  padding:7px;
+  margin:0px 0px 5px 15px;
+}
+.panel_menu ul li a:hover{
+  opacity: 0.85;
+}
+
+.panel_menu i , .panel_menu label {
+  display: block;
+  padding:5px;
+  cursor: pointer;
+}
+.panel_menu label {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.panel_menu li.active {
+  background-color: rgb(202, 201, 204);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}

@@ -1,0 +1,8 @@
+section.panel_content_container {
+  display: inline-block;
+  width:90%;
+  max-height: 90vh;
+  overflow-y: auto;
+
+
+}
