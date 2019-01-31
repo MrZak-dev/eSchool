@@ -55,18 +55,74 @@
           </div>
       </aside>
       <section class="panel_content_container">
+      <div class="panel_content">
+  <section class="teacher_classes">
+    <header class="marks_panel_header">
+      <h1 class="marks_panel_heading">Gestion Des Notes</h1>
+    </header>
+
+    <div class="form-group">
 <?php
-  $panel_data['panel_data'] = $view_data;
-  switch ($this->session->userdata('login_type')) {
-    case 'student':
-      $this->load->view('panel/marks_table_view',$panel_data);
-    break;
-          
-    case 'professor':
-    $this->load->view('panel/professor_select_view',$panel_data);
-    break;
-  }
+$form_attributes = array(
+  'class'=>'form-group',
+  'id' => 'class_select'
+);
+$submit_attributes = array(
+  'class'=>'classes_select_btn',
+  'type'=>'submit',
+  'value'=>'Valider'
+);
+$test_mark_att = array(
+  'class'=>'mark',
+  'type'=>'text',
+  'name'=>'test_mark'
+);
+$exam_mark_att = array(
+  'class'=>'mark',
+  'type'=>'text',
+  'name'=>'exam_mark'
+);
+$rat_mark_att = array(
+  'class'=>'mark',
+  'type'=>'text',
+  'name'=>'ratt_mark'
+);
+echo form_open('dashboard/insert',$form_attributes);
 ?>
+      <select class="form-control" name="course_id">
+<?php
+foreach ($courses as $course) {
+echo '<option value='.$course->course_id.'>'.$course->course_name.'</option>';
+}
+?>
+      </select>
+<!--Students list-->
+
+      <select class="form-control" name="student_id">
+<?php
+foreach ($students as $student) {
+echo '<option value='.$student->student_id.'>'.$student->student_name.'</option>';
+}
+?>
+      </select>
+
+<?php
+echo form_label("Control : ");
+echo form_input($test_mark_att);
+
+echo form_label("Examen : ");
+echo form_input($exam_mark_att);
+
+echo form_label("Rattrapage : ");
+echo form_input($rat_mark_att);
+
+echo form_input($submit_attributes);
+echo form_close();
+
+?>
+    </div>
+  </section>
+</div>
       </section>
     </main>
   </body>

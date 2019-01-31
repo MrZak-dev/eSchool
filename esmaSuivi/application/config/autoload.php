@@ -132,4 +132,4 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array('user_login_check','marks_table_data');
+$autoload['model'] = array('user_login_check','get_user_data','set_user_data');

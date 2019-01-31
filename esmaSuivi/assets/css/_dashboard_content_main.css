@@ -3,6 +3,31 @@ section.panel_content_container {
   width:90%;
   max-height: 90vh;
   overflow-y: auto;
+}
 
+/*Professor inserting */
 
+section.teacher_classes .form-group{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section.teacher_classes  select {
+  padding : 10px;
+  border: solid 3px rgb(21, 27, 37);
+  border-radius: 5px;
+}
+section.teacher_classes input {
+  padding:5px;
+  margin:5px;
+}
+section.teacher_classes input[type=submit]{
+  background-color:rgb(50, 164, 112);
+  border: solid 3px rgb(50, 164, 112);
+  font-weight:900;
+}
+
+section.teacher_classes input[type=text] , section.teacher_classes label{
+  display:table;
 }

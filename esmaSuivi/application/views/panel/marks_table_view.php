@@ -8,29 +8,26 @@
         <tr>
           <th rowspan="2">Matiéres</th>
           <th colspan="3">Semestre 1</th>
-          <th colspan="3">Semestre 2</th>
+          <!--<th colspan="3">Semestre 2</th>-->
         </tr>
         <tr>
           <th>Controle</th>
           <th>Examen</th>
           <th>Rattrapage</th>
-          <th>Controle</th>
+        <!--  <th>Controle</th>
           <th>Examen</th>
-          <th>Rattrapage</th>
+          <th>Rattrapage</th>-->
         <tr>
       </thead>
       <tbody>
         <?php
-            foreach ($table_data as $data_column) {
+            foreach ($panel_data as $data_column) {
               echo '
               <tr class="data_row">
                 <td class="course_name">'.$data_column->course_name.'</td>
                 <td class="test_mark">'.$data_column->test_mark.'</td>
                 <td class="exam_mark">'.$data_column->exam_mark.'</td>
                 <td class="rat_mark">'.$data_column->ratt_mark.'</td>
-                <td class="test_mark">null</td>
-                <td class="exam_mark">null</td>
-                <td class="rat_mark">null</td>
               </tr>
               ';
             }

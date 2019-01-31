@@ -40,12 +40,37 @@
     'type' => 'submit',
     'value' => 'LOGIN'
   );
-            echo form_open('auth',$form_attribute);
-              // echo form_label('Username');
-              echo form_input($username_input);
-              // echo form_label('Password');
-              echo form_input($password_input);
-              ?>
+
+  $student_radio = array(
+    'class' => 'form-check-input',
+    'type' => 'radio',
+    'name' => 'login_type',
+    'value' => 'student',
+    'checked' => TRUE
+  );
+
+  $professor_radio = array(
+    'class' => 'form-check-input',
+    'type' => 'radio',
+    'name' => 'login_type',
+    'value' => 'professor',
+  );
+echo form_open('auth',$form_attribute);
+// echo form_label('Username');
+echo form_input($username_input);
+// echo form_label('Password');
+echo form_input($password_input);
+?>
+              <div class="form-check form-check-inline">
+<?php
+echo form_radio($student_radio);
+?>
+                <label class="form-check-label">Etudiant</label>
+<?php
+echo form_radio($professor_radio);
+?>
+                <label class="form-check-label">Professeur</label>
+              </div>
               <div class="the-btn">
                 <button type="submit" class="btn btn-primary submit-btn" ><i class="fa fa-2x fa-sign-in" aria-hidden="true"></i></button>
               </div>
